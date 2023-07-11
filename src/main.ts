@@ -42,7 +42,6 @@ window.addEventListener("DOMContentLoaded", () => {
     let copyButton: HTMLInputElement | null = document.querySelector("#copy-button");
 
     if (copyButton) copyButton.onclick = () => {
-        console.log(("called!@"));
         let pass: HTMLInputElement | null = document.querySelector("#pass-output");
         if (pass) clipboard.writeText(pass.value)
     };
