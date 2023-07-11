@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PassGen</title>
+    <script type="module" src="/src/main.ts" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>PassGen <img src="/src/assets/padlock-icon.svg" style="width:auto; height:29px;"></h1>
+        <br>
+
+        <div class="row">
+            <input type="text" style="width: 55%" id="pass-output" placeholder="password output..." readonly>
+            &nbsp;<button id="copy-button">copy</button>
+        </div>
+
+        <div class="row">
+            <h3 id="length-output" style="margin-bottom: 0px; margin-right: 250px">Length: 15</h3>
+        </div>
+        <div class="row">
+            <input id="pass-length" type="range" min="8" max="30" value="15" step="1">
+            <div id="checkbox-container">
+                <input name="chk-nums" type="checkbox" checked="true" id="use-numbers">
+                <input name="chk-chars" type="checkbox" checked="false" id="use-schars">
+                <p style="grid-column: 2; grid-row: 1;">Numbers&emsp;&emsp;&emsp;&emsp;</p>
+                <p style="grid-column: 2; grid-row: 3; padding-top: 0px;">Special Characters</p>
+            </div>
+
+
+        </div>
+    </div>
+    <p style="color: gray; position: absolute; left: 5px; bottom: -10px; font-size: x-small">© Kian Heitkamp</p>
+</body>
+
+</html>
