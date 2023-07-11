@@ -60,6 +60,14 @@ button {
     background-color: #2a4fa1;
 }
 
+#regen-button {
+    margin-right: 5px;
+    background-image: url("/src/assets/refresh-light.svg");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+}
+
 input[type=range] {
     margin-right: 250px;
     position: absolute;
@@ -146,5 +154,9 @@ button {
 
     button:active {
         background-color: #0f0f0f69;
+    }
+
+    #regen-button {
+        background-image: url("/src/assets/refresh-dark.svg")
     }
 }

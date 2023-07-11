@@ -4,7 +4,7 @@ version = 3
 
 [[package]]
 name = "Passgen"
-version = "1.0.2"
+version = "1.0.3"
 dependencies = [
  "rand 0.8.5",
  "serde",

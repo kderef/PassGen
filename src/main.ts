@@ -46,6 +46,9 @@ window.addEventListener("DOMContentLoaded", () => {
         if (pass) clipboard.writeText(pass.value)
     };
 
+    let regenButton: HTMLInputElement | null = document.querySelector("#regen-button");
+    if (regenButton) regenButton.onclick = generatePassword;
+
     // run once on startup
     generatePassword();
 });

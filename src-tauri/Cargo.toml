@@ -1,6 +1,6 @@
 [package]
 name = "Passgen"
-version = "1.0.2"
+version = "1.0.3"
 description = "A Simple Password Generator"
 authors = ["Kian Heitkamp"]
 license = ""
